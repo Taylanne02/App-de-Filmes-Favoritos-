@@ -14,3 +14,7 @@ Nesta etapa, implementou-se o sistema de roteamento da aplicação. Foram criada
 
 Nesta etapa, foi desenvolvida a funcionalidade de alternância entre os temas claro e escuro (light/dark mode). 
 
+## Passo 4: Criando o AuthContext (login simulado)
+
+Nesta etapa, foi implementado o login simulado com armazenamento do usuário no localStorage. Como as rotas protegidas ainda não foram configuradas, a aba de favoritos permanece visível, o que será corrigido na próxima etapa.
+
