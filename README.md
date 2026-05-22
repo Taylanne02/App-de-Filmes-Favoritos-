@@ -10,4 +10,7 @@ Nesta etapa, foi realizada a inicialização do projeto utilizando o Vite com o 
 
 Nesta etapa, implementou-se o sistema de roteamento da aplicação. Foram criadas e configuradas as rotas utilizando os principais conceitos do React Router DOM, tais como BrowserRouter, Routes, Route e Link.
 
+## Passo 3: Criando o ThemeContext 
+
+Nesta etapa, foi desenvolvida a funcionalidade de alternância entre os temas claro e escuro (light/dark mode). 
 
