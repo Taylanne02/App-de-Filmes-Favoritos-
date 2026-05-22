@@ -18,3 +18,6 @@ Nesta etapa, foi desenvolvida a funcionalidade de alternância entre os temas cl
 
 Nesta etapa, foi implementado o login simulado com armazenamento do usuário no localStorage. Como as rotas protegidas ainda não foram configuradas, a aba de favoritos permanece visível, o que será corrigido na próxima etapa.
 
+## Passo 5: Criando a Rota Protegida
+
+Nesta etapa, implementou-se o sistema de rotas protegidas para restringir o acesso a páginas exclusivas de usuários autenticados. Além disso, foi feita a integração com a API para listagem e consumo dos dados dos filmes, acompanhada da criação do botão de favoritos para salvar as preferências do usuário. Por fim, foram aplicadas melhorias no CSS, refinando o design e a experiência visual da aplicação.
