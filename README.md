@@ -25,3 +25,7 @@ Nesta etapa, implementou-se o sistema de rotas protegidas para restringir o aces
 ## Passo 6: Listando filmes na Home
 
 Nesta etapa, foi implementada a listagem de filmes na página inicial da aplicação. Utilizando useState e useEffect, os dados foram buscados a partir de uma API pública de filmes e armazenados no estado da aplicação. Essa etapa já tinha sido inserida anteriormente, mas agora segue o que se pede no Passo 6.
+
+## Passo 7: Página de detalhes do filme
+
+As funcionalidades exigidas já estão em funcionamento quando foi pedido, como ver detalhes e o botão favoritos, que já está em funcionamento. Porém como estou usando outra API, não tem como ver todas os detalhes solicitados. 
