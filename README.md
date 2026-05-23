@@ -21,3 +21,7 @@ Nesta etapa, foi implementado o login simulado com armazenamento do usuário no 
 ## Passo 5: Criando a Rota Protegida
 
 Nesta etapa, implementou-se o sistema de rotas protegidas para restringir o acesso a páginas exclusivas de usuários autenticados. Além disso, foi feita a integração com a API para listagem e consumo dos dados dos filmes, acompanhada da criação do botão de favoritos para salvar as preferências do usuário. Por fim, foram aplicadas melhorias no CSS, refinando o design e a experiência visual da aplicação.
+
+## Passo 6: Listando filmes na Home
+
+Nesta etapa, foi implementada a listagem de filmes na página inicial da aplicação. Utilizando useState e useEffect, os dados foram buscados a partir de uma API pública de filmes e armazenados no estado da aplicação. Essa etapa já tinha sido inserida anteriormente, mas agora segue o que se pede no Passo 6.
