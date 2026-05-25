@@ -1,52 +1,48 @@
 import { useContext } from "react";
-
 import { FavoritosContext } from "../contexts/FavoritosContext";
 
 function Favoritos() {
-  const {
-    favoritos,
-    removerFavorito,
-  } = useContext(FavoritosContext);
+  const { favoritos, removerFavorito } =
+    useContext(FavoritosContext);
 
   return (
-    <div>
+    <main>
       <h1>Meus Favoritos</h1>
 
       {favoritos.length === 0 ? (
-        <p>Nenhum filme favoritado.</p>
+        <p className="mensagem">
+          Lista de favoritos vazia.
+        </p>
       ) : (
-        favoritos.map((filme) => (
-          <div
-            key={filme.id}
-            style={{
-              marginBottom: "20px",
-              border: "1px solid gray",
-              padding: "10px",
-            }}
-          >
-            <h2>{filme.name}</h2>
-
-            <img
-              src={filme.image?.medium}
-              alt={filme.name}
-            />
-
-            <br />
-            <br />
-
-            <button
-              onClick={() =>
-                removerFavorito(filme.id)
-              }
+        <div className="lista-filmes">
+          {favoritos.map((filme) => (
+            <div
+              className="card-filme"
+              key={filme.id}
             >
-              ❤️
-            </button>
+              <h2>{filme.name}</h2>
 
-            <p></p>
-          </div>
-        ))
+              <img
+                src={filme.image?.medium}
+                alt={filme.name}
+              />
+
+              <button
+                onClick={() => {
+                  removerFavorito(filme.id);
+
+                  alert("Filme removido dos favoritos!");
+                }}
+              >
+                ❤️
+              </button>
+
+              <p>Remover dos favoritos</p>
+            </div>
+          ))}
+        </div>
       )}
-    </div>
+    </main>
   );
 }
 

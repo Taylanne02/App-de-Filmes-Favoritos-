@@ -21,7 +21,7 @@ function Home() {
         setCarregando(false);
       })
       .catch(() => {
-        setErro("Erro ao carregar filmes.");
+        setErro("Erro ao carregar filmes. Verifique sua internet.");
         setCarregando(false);
       });
   }, []);
@@ -35,7 +35,7 @@ function Home() {
   }
 
   if (erro) {
-    return <p>{erro}</p>;
+    return <p className="mensagem erro">{erro}</p>;
   }
 
   return (
@@ -53,13 +53,17 @@ function Home() {
             />
 
             <button
-              onClick={() =>
+              onClick={() => {
                 filmeFavoritado(filme.id)
                   ? removerFavorito(filme.id)
-                  : adicionarFavorito(filme)
-              }
+                  : adicionarFavorito(filme);
+
+                alert("Ação realizada com sucesso!");
+              }}
             >
-              {filmeFavoritado(filme.id) ? "❤️" : "🤍"}
+              {filmeFavoritado(filme.id)
+                ? "❤️"
+                : "🤍"}
             </button>
 
             <Link to={`/filme/${filme.id}`}>

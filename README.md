@@ -35,3 +35,7 @@ As funcionalidades exigidas já estão em funcionamento quando foi pedido, como 
 Nesta etapa, foi criado o contexto de favoritos da aplicação. Com ele, os filmes favoritados passaram a ser armazenados em um estado global, podendo ser acessados em diferentes páginas, como Home, Detalhes do Filme e Favoritos.
 
 Também foram criadas as funções para adicionar e remover filmes da lista de favoritos. Além disso, foi implementada a persistência com localStorage, garantindo que os favoritos continuem salvos mesmo após recarregar a página. Também já tinham sido criadas anteriormente as funções para adicionar e remover filmes da lista de favoritos, junto com a persistência com localStorage, garantindo que os favoritos continuem salvos mesmo após recarregar a página.
+
+## Passo 9: Polimento e CSS
+
+Nesta etapa foram adicionadas mensagens de feedback ao realizar as ações "Adicionar ao favoritos" e "Remover dos favoritos", além da garantia que as ações de "Tema claro" e "Tema escuro" estejam sendo aplicados em todo o projeto. 
